@@ -6,6 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
     background-color: #f5f5f1;
 }
 
@@ -50,7 +51,7 @@ span{
 }
 
 #card-container .card .nome{
-
+    font-size: 1.5em;
     text-align: center;
     padding-top: 10px;
 }
