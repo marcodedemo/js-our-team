@@ -17,7 +17,7 @@
 
 
 
-
+// creo l'array di oggetti contenenti le informazioni dei singoli membri
 const members = [
 
     {
@@ -53,4 +53,16 @@ const members = [
 ];
 
 
-console.log(members);
+
+
+// creo un ciclo di stampa in console delle informazioni dei membri
+for (let i = 0; i < members.length; i++) {
+    
+    console.log("Nome: " + members[i].fullName);
+    console.log("Ruolo in azienda : " + members[i].role);
+    console.log("Stringa immagine: " + members[i].img);
+    console.log("----------------------------------------");
+
+
+
+}
