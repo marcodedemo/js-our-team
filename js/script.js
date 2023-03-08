@@ -58,11 +58,13 @@ const members = [
 // creo un ciclo di stampa in console delle informazioni dei membri
 for (let i = 0; i < members.length; i++) {
     
-    console.log("Nome: " + members[i].fullName);
-    console.log("Ruolo in azienda : " + members[i].role);
-    console.log("Stringa immagine: " + members[i].img);
-    console.log("----------------------------------------");
-
-
+    document.writeln("Nome: " + members[i].fullName);
+    document.writeln("<br>");
+    document.writeln("Ruolo in azienda : " + members[i].role);
+    document.writeln("<br>");
+    document.writeln("Stringa immagine: " + members[i].img);
+    document.writeln("<br>");
+    document.writeln("");
+    document.writeln("<br>");
 
 }
