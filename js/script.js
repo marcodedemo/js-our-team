@@ -62,7 +62,9 @@ for (let i = 0; i < members.length; i++) {
     document.writeln("<br>");
     document.writeln("Ruolo in azienda : " + members[i].role);
     document.writeln("<br>");
-    document.writeln("Stringa immagine: " + members[i].img);
+    document.writeln('Immagine:');
+    document.writeln("<br>");
+    document.writeln('<img src="img/' + members[i].img + '">')
     document.writeln("<br>");
     document.writeln("");
     document.writeln("<br>");
