@@ -49,24 +49,28 @@ const members = [
         fullName: "Barbara Ramos",
         role: "Graphic Designer",
         img: "barbara-ramos-graphic-designer.jpg"
-    },
+    }
 ];
 
 
 
+// dichiaro la variabile corrispondente al contenitore delle card
+let cardContainerElement = document.getElementById("card-container");
+
 
 // creo un ciclo di stampa in console delle informazioni dei membri
 for (let i = 0; i < members.length; i++) {
+
+    // creo per ogni membro contenuto nell'array una card
+    let newCard = document.createElement("div");
+
+    // assegno ad ogni elemento creato una classe di stile
+    newCard.classList.add("card");
+
+    // assegno la genitorialità all'elemento creato
+    cardContainerElement.append(newCard);
+
     
-    document.writeln("Nome: " + members[i].fullName);
-    document.writeln("<br>");
-    document.writeln("Ruolo in azienda : " + members[i].role);
-    document.writeln("<br>");
-    document.writeln('Immagine:');
-    document.writeln("<br>");
-    document.writeln('<img src="img/' + members[i].img + '">')
-    document.writeln("<br>");
-    document.writeln("");
-    document.writeln("<br>");
+    newCard.innerHTML = ('<img src="img/' + members[i].img + '">' + '<div class="nome">' + members[i].fullName + '</div>' + '<div class="ruolo">' + members[i].role + '</div>');
 
 }
